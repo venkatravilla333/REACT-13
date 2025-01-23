@@ -18,7 +18,7 @@ function Parent() {
     <div>
       <h3>This is parent component : {name}</h3>
       <h3>Data from child: {data}</h3>
-      <Child1 data={name} />
+      <Child1  data={data} />
       <Child2 getData={getData} />
     </div>
   )
