@@ -348,3 +348,81 @@ package.lock.json
    - In React, we have to use className instead of class for adding classes to the HTML element
    - All attribute names in React are written in camelCase.
    - undefined, null, and boolean are not displayed on the UI when used inside JSX.
+
+   7) Props
+   =====
+
+   1. In ReactJS, "props" short for properties, it is a way for passing data from a parent component to its child components.
+ 
+   2. Props allow you to make your components dynamic and reusable by providing them with the necessary data from their parent components.
+
+   3. Props are read-only (immutable) meaning that the child components should not modify the props directly. If a child component needs to modify the data, (it should be done by sending a callback function from the parent component as a prop.)
+
+   4. Props promote the flow of data from top to bottom in the component hierarchy, following the unidirectional data flow principle of React.
+
+     Here's how it works:
+
+   - Parent Component: In the parent component, you call a child component and pass data to it using attributes. These attributes are referred to as props in the child component.
+   
+   - Child Component: In the child component, you can access the data passed from parent through the props object.
+
+   
+
+   1) Parent to child 
+
+   2) Child to parent
+
+   3) Child to child (between siblings)
+
+      1) Child to parent & parent to child
+
+      2) Context API
+
+      3) Redux
+  
+
+8) State
+   =====
+
+
+   1. In React, "state" is a pre-defined variable for storing data within a component. 
+      Unlike props, which are passed from parent to child components and props are 
+      read-only, where as state is used for storing data that can change over time and is maintained and managed within the component itself.
+
+   2. State is an essential concept in React and is widely used for creating dynamic and interactive user interfaces.
+
+   3. A React component's state is used to store and manage data that can change over time. When the state of a component changes, React will automatically re-render the component, updating the user interface to reflect the new state.
+
+   4. To use state in a class-based component, you can define the initial state in the constructor using this.state. In functional components, you can use the useState hook to create and manage state variables.
+
+  
+ 
+   1) What is local state?
+      ===================
+
+   - In React, "local state" refers to the state that is confined and managed within a specific component. It means that the state data is not accessible by other components in the application.
+
+   - useState:
+
+     useState is a built-in React Hook that allows functional components to have local state.
+     It is used for managing simple state within a component without the need for complex state management solutions.
+     Use useState when you have local state that is limited to a single component.
+
+   
+     1) class components
+
+      this.state = {}
+
+      this.setState()
+
+     2) functional components
+
+      simple data
+      -----------
+
+      useState hook
+
+      complex data
+      ------------
+
+      useReducer hook
