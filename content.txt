@@ -426,3 +426,50 @@ package.lock.json
       ------------
 
       useReducer hook
+
+
+      
+
+   2) What is state lifting?
+      =====================
+
+  - State lifting, also known as "lifting state up," is a pattern in React where the state data is moved from a child component to its parent component in the component hierarchy. This is done to share the state between multiple child components.
+
+  - The need for state lifting typically arises when two or more components need to share the same state. Instead of maintaining the state separately in each child component, the state is moved to a common parent component.
+ 
+  - The parent component then passes down the state data and any necessary callback functions as props to the child components, allowing them to interact with and update the shared state.
+
+
+   3) What is props drilling?
+      ======================
+
+
+  - Props drilling is a term used in React to describe the process of passing data (props) from a higher-level component down to one or more nested child components through multiple levels of the component tree.
+
+  - This process of passing the same prop through multiple intermediary components is known as props drilling.
+
+
+    Props drilling typically occurs when ?
+    --------------------------------------
+
+  - Data needs to be shared between distant components: If two components are not directly connected through parent-child relationships, but they need to exchange data, the data must be passed through intermediary components using props drilling.
+
+  - Intermediate components do not use the data themselves: Sometimes, components in the middle of the component tree don't need the data they receive as props. However, since they are required to pass the data down to their child components, they act as channel for passing data, leading to props drilling.
+
+
+    While props drilling is a natural and common pattern in React applications, it can lead to a couple of issues:
+
+   1) Prop drilling can make the code harder to maintain and read, especially when there are many levels of nesting.
+
+   2) If the data needs to be accessed by a deeply nested component, all the intermediate components must receive and pass down the data, even if they don't use it, which can be inefficient.
+
+
+    4) How to avoid props drilling in react?
+       ====================================
+
+   - By maintaining global state we can avoid props drilling.
+
+   - To address these issues, you can consider using state management libraries like Redux or the React Context API to manage and share data across components without the need for explicit props drilling.
+ 
+   - These libraries offer centralized stores or contexts that allow components to access data without passing it through every level of the component tree.
+

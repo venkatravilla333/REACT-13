@@ -4,8 +4,10 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
+import A from "./components/functional-com/State/sync-data/localstate (state-lifting & props-drilling )/A"
+
 // import Parent from "./components/functional-com/Props/Parent"
-import Counter from "./components/functional-com/State/localstate/Counter"
+
 
 function App() {
   return (<div>
@@ -16,7 +18,7 @@ function App() {
     {/* {Jsx()} */}
     {/* <Jsx/> */}
     {/* <Parent/> */}
-    <Counter/>
+    <A/>
     </div>)
 }
 
