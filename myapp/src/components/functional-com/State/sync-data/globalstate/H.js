@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 
-function H(props) {
-  console.log(props)
-//  let [name, setName] = useState('apple')
+function H() {
   return (
     <div>
-      <h2>H com: {props.name}</h2>
+      <h2>H com:</h2>
     </div>
   )
 }

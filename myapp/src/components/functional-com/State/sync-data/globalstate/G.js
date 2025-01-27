@@ -2,11 +2,10 @@ import React from 'react'
 import J from './J'
 import K from './K'
 
-function G(props) {
-  console.log(props)
+function G() {
   return (
     <div>
-      <J name={props.name} />
+      <J />
       <K />
     </div>
   )

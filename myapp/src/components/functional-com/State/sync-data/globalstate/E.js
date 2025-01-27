@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import H from './H'
 import I from './I'
 
-function E(props) {
-//  let [name, setName] = useState('apple')
+function E() {
 
   return (
     <div>
-      <H name={props.name} />
-      <I name={props.name}/>
+      <H/>
+      <I/>
     </div>
   )
 }

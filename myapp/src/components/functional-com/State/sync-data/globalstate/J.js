@@ -1,10 +1,10 @@
 import React from 'react'
 import L from './L'
 
-function J(props) {
+function J() {
   return (
     <div>
-      <L name={ props.name } />
+      <L />
     </div>
   )
 }

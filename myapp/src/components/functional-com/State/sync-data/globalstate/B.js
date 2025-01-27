@@ -2,11 +2,11 @@ import React from 'react'
 import D from './D'
 import E from './E'
 
-function B(props) {
+function B() {
   return (
     <div>
       <D />
-      <E name={props.name} />
+      <E/>
     </div>
   )
 }

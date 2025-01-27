@@ -473,3 +473,49 @@ package.lock.json
  
    - These libraries offer centralized stores or contexts that allow components to access data without passing it through every level of the component tree.
 
+
+     5) What is Global state?
+       ====================
+
+   - In ReactJS, "global state" refers to a centralized state management approach where the application's state is stored and managed in a global container and made accessible to any component in the application.
+ 
+   - This global state can be accessed from any component without the need to pass data through props or props drilling.
+
+   - The motivation behind using global state is to simplify the process of sharing data between different components, especially when multiple components need access to the same data. It helps avoid the complexity arise from excessive props drilling.
+
+
+     There are various libraries and approaches available in React to implement global state:
+
+
+     1) React Context API:
+        ----------------- 
+
+    - The React Context API is a built-in feature that allows you to create a context and share data through the component tree without explicit props passing.
+
+    - The Context API in React allows you to store and share any value that you want, including primitive data types (like numbers and strings), objects, arrays, functions, or even React components. It's not limited to specific data types.
+ 
+    - It enables you to define a Provider component at the top level of the application to provide data, and then any component within the provider's scope can consume that data using the  useContext hook.
+
+    - When you create a context using React.createContext(), you can provide an initial value that will be used when a component accesses the context without a matching provider.
+
+    - Basically, Context API consists of two main components: the context provider and the context consumer. The provider is responsible for creating and managing the context, which holds the data to be shared between components. On the other hand, the consumer is used to access the context and its data from within a component.
+
+      Steps:
+
+        1) Create a Context Object:
+ 
+           First, you need to create a context object using the createContext function from the 'react' library. This context object will hold the data that you want to share  across your application.
+
+           
+        2) Wrap Components with a Provider:
+
+           Once you've created a context object, you need to wrap the top level components that need access to the shared data with a Provider component. The Provider component accepts a "value" prop that holds the shared data, and any component that is a child of the Provider component can access that shared data.
+
+        3) Consume context value:
+
+           In class components: render props pattern
+
+           In functional components: useContext hook
+
+     Note: Avoid using it for state that only needs to be accessed within a single component, as it can lead to unnecessary complexity and performance issues.
+
