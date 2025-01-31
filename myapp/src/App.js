@@ -4,7 +4,9 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import A from "./components/functional-com/State/sync-data/globalstate/redux-concept/react-components/A"
+import A from "./components/functional-com/State/sync-data/globalstate/redux-toolkit/react-components/A"
+
+// import A from "./components/functional-com/State/sync-data/globalstate/redux-concept/react-components/A"
 
 // import A from "./components/functional-com/State/sync-data/globalstate/context-api/A"
 

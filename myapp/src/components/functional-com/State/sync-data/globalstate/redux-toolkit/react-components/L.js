@@ -1,7 +1,9 @@
 import React, { useContext, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { buyCake } from '../redux/cake/ActionCreator'
-import { buyBook } from '../redux/books/actionCreator'
+import { buyCake } from '../slices/cakeSlice/cakeSlice'
+import { buyBook } from '../slices/bookSlice/bookSlice'
+// import { buyCake } from '../redux/cake/ActionCreator'
+// import { buyBook } from '../redux/books/actionCreator'
 
 function L() {
 
