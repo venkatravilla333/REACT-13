@@ -4,7 +4,17 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import A from "./components/functional-com/State/sync-data/globalstate/redux-toolkit/react-components/A"
+import Container from "./components/functional-com/side-Effects/cleanup/Container"
+import GetData from "./components/functional-com/State/async-data/localstate/GetData"
+
+// import Parent from "./components/functional-com/side-Effects/runs-onlyonce/Parent"
+
+// import Parent from "./components/functional-com/side-Effects/runs-conditinally/Parent"
+
+// import Parent from "./components/functional-com/side-Effects/default-behaviour/Parent"
+
+// import Parent from "./components/functional-com/side-Effects/default-behaviour/Parent"
+// import A from "./components/functional-com/State/sync-data/globalstate/redux-toolkit/react-components/A"
 
 // import A from "./components/functional-com/State/sync-data/globalstate/redux-concept/react-components/A"
 
@@ -30,7 +40,11 @@ function App() {
     {/* <Parent/> */}
     {/* <A/> */}
     {/* <Parent/> */}
-    <A/>
+    {/* <A/> */}
+    {/* <Parent/> */}
+    {/* <Parent/> */}
+    {/* <Container/> */}
+    <GetData/>
     </div>)
 }
 
