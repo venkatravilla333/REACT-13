@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function GetData() {
+function L() {
   let [loading, setLoading] = useState(false)
   let [posts, setPosts] = useState([])
   let [error, setError] = useState(null)
@@ -49,4 +49,4 @@ function GetData() {
   )
 }
 
-export default GetData
+export default L

@@ -4,8 +4,10 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import Container from "./components/functional-com/side-Effects/cleanup/Container"
-import GetData from "./components/functional-com/State/async-data/localstate/GetData"
+// import Container from "./components/functional-com/side-Effects/cleanup/Container"
+// import A from "./components/functional-com/State/async-data/localstate/A"
+import A from "./components/functional-com/State/async-data/globalstate/context-api/A"
+// import GetData from "./components/functional-com/State/async-data/localstate/GetData"
 
 // import Parent from "./components/functional-com/side-Effects/runs-onlyonce/Parent"
 
@@ -44,7 +46,9 @@ function App() {
     {/* <Parent/> */}
     {/* <Parent/> */}
     {/* <Container/> */}
-    <GetData/>
+    {/* <GetData/> */}
+    {/* <A/> */}
+    <A/>
     </div>)
 }
 
