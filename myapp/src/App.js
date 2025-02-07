@@ -4,7 +4,10 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import A from "./components/functional-com/State/async-data/globalstate/redux-toolkit/react-components/A"
+import List from "./components/functional-com/list-rendering(map)/List"
+import Condtion from "./components/functional-com/performance/conditional-rendering/Condtion"
+
+// import A from "./components/functional-com/State/async-data/globalstate/redux-toolkit/react-components/A"
 
 // import A from "./components/functional-com/State/async-data/globalstate/redux-concept/react-components/A"
 
@@ -54,7 +57,9 @@ function App() {
     {/* <A/> */}
     {/* <A/> */}
     {/* <A/> */}
-    <A/>
+    {/* <A/> */}
+    {/* <List/> */}
+    <Condtion/>
     </div>)
 }
 
