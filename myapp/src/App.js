@@ -4,8 +4,17 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import List from "./components/functional-com/list-rendering(map)/List"
-import Condtion from "./components/functional-com/performance/conditional-rendering/Condtion"
+import Parent from "./components/class-com/Destructuring/Parent"
+// import Count1 from "./components/functional-com/performance/remove-duplicate-logic/remove-duplicate/Count1"
+// import Count2 from "./components/functional-com/performance/remove-duplicate-logic/remove-duplicate/Count2"
+// import Count3 from "./components/functional-com/performance/remove-duplicate-logic/remove-duplicate/Count3"
+
+// import List from "./components/functional-com/list-rendering(map)/List"
+// import Condtion from "./components/functional-com/performance/conditional-rendering/Condtion"
+// import Fragment from "./components/functional-com/performance/fragment/Fragment"
+// import Count1 from "./components/functional-com/performance/remove-duplicate-logic/duplicate-Logic/Count1"
+// import Count2 from "./components/functional-com/performance/remove-duplicate-logic/duplicate-Logic/Count2"
+// import Count3 from "./components/functional-com/performance/remove-duplicate-logic/duplicate-Logic/Count3"
 
 // import A from "./components/functional-com/State/async-data/globalstate/redux-toolkit/react-components/A"
 
@@ -59,7 +68,16 @@ function App() {
     {/* <A/> */}
     {/* <A/> */}
     {/* <List/> */}
-    <Condtion/>
+    {/* <Condtion/> */}
+    {/* <Fragment/> */}
+    {/* <Count1 />
+    <Count2 />
+    <Count3 /> */}
+    {/* <Count1/>
+    <Count2/>
+    <Count3/> */}
+    <Parent/>
+    {/* {new Parent().render()} */}
     </div>)
 }
 
