@@ -4,7 +4,11 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import Parent from "./components/class-com/Destructuring/Parent"
+import Condtion from "./components/class-com/performance/conditional-rendering/Condtion"
+
+// import Parent from "./components/class-com/Destructuring/Parent"
+// import List from "./components/class-com/list-rendering(map)/List"
+// import Parent from "./components/class-com/Props/Parent"
 // import Count1 from "./components/functional-com/performance/remove-duplicate-logic/remove-duplicate/Count1"
 // import Count2 from "./components/functional-com/performance/remove-duplicate-logic/remove-duplicate/Count2"
 // import Count3 from "./components/functional-com/performance/remove-duplicate-logic/remove-duplicate/Count3"
@@ -76,8 +80,11 @@ function App() {
     {/* <Count1/>
     <Count2/>
     <Count3/> */}
-    <Parent/>
+    {/* <Parent/> */}
     {/* {new Parent().render()} */}
+    {/* <List/> */}
+    {/* <Parent/> */}
+    <Condtion/>
     </div>)
 }
 

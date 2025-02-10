@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Fragment() {
-  return (
+class Fragment extends Component() {
+  render() {
+    return (
    <>
      <h1>sachin</h1>
      <h1>sachin</h1>
    </>
    
   )
+  }
+  
 }
 
 export default Fragment
