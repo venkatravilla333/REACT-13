@@ -1,18 +1,27 @@
-import React, { useState } from 'react'
+// import React, { Component } from 'react'
 
-function Count1() {
-
-  var [count, setCount] = useState(0)
+// export class Count1 extends Component {
+//   constructor(props) {
+//     super(props)
   
-  let increaseCount = () => {
-    setCount(count+1)
-  }
-  return (
-    <div>
-      <h2>Count: {count}</h2>
-      <button onClick={increaseCount}>increase count1</button>
-    </div>
-  )
-}
+//     this.state = {
+//       count: 0
+//     }
+//   }
 
-export default Count1
+//   updateCount = () => {
+//     this.setState({
+//       count: this.state.count+1
+//     })
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h3>Count1: {this.state.count}</h3>
+//         <button onClick={this.updateCount}>increase</button> 
+//       </div>
+//     )
+//   }
+// }
+
+// export default Count1

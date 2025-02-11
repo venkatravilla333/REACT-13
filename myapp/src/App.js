@@ -4,7 +4,35 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import Condtion from "./components/class-com/performance/conditional-rendering/Condtion"
+// import Count1 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count1"
+// import Count2 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count2"
+// import Count3 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count3"
+// import Count1 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count1"
+import Count1 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Count1"
+import Count2 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Count2"
+import Count3 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Count3"
+import Render from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Render"
+
+// import A from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Count1"
+// import B from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Count2"
+// import C from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Count3"
+
+// import A, { Count1 } from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/A"
+// import { Count2 } from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/B"
+// import C, { Count3 } from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/C"
+
+// import { Count1 } from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count1"
+// import { Count2 } from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count2"
+// import { Count3 } from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count3"
+// import Hoc from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Hoc"
+
+
+// import { Count1 } from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count1"
+
+// import Condtion from "./components/class-com/performance/conditional-rendering/Condtion"
+// import Count1 from "./components/class-com/performance/remove-duplicate-logic/duplicate-Logic/Count1"
+// import Count2 from "./components/class-com/performance/remove-duplicate-logic/duplicate-Logic/Count2"
+// import Count3 from "./components/class-com/performance/remove-duplicate-logic/duplicate-Logic/Count3"
 
 // import Parent from "./components/class-com/Destructuring/Parent"
 // import List from "./components/class-com/list-rendering(map)/List"
@@ -84,7 +112,28 @@ function App() {
     {/* {new Parent().render()} */}
     {/* <List/> */}
     {/* <Parent/> */}
-    <Condtion/>
+    {/* <Condtion/> */}
+    {/* <Count1 />
+    <Count2 />
+    <Count3/> */}
+    {/* <A />
+    <B />
+    <C/> */}
+    {/* <Count1 />
+    <Count2 />
+    <Count3/> */}
+    <Render test={(count, updateState) => {
+     return <Count1 count={count} updateState={updateState} />
+     } }>
+    </Render>
+    <Render test={(count, updateState) => {
+     return <Count2 count={count} updateState={updateState} />
+     } }>
+    </Render>
+    <Render test={(count, updateState) => {
+      return <Count3 count={count} updateState={updateState} />
+     } }>
+    </Render>
     </div>)
 }
 

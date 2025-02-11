@@ -1,18 +1,27 @@
-import React, { useState } from 'react'
+// import React, { Component } from 'react'
 
-function Count2() {
-
-  var [count, setCount] = useState(0)
+// export class Count2 extends Component {
+//   constructor(props) {
+//     super(props)
   
-  let increaseCount = () => {
-    setCount(count+1)
-  }
-  return (
-    <div>
-      <h2>Count: {count}</h2>
-      <button onMouseOver={increaseCount}>increase count1</button>
-    </div>
-  )
-}
+//     this.state = {
+//       count: 0
+//     }
+//   }
 
-export default Count2
+//   updateCount = () => {
+//     this.setState({
+//       count: this.state.count+1
+//     })
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h3>Count2: {this.state.count}</h3>
+//         <button onMouseOver={this.updateCount}>increase</button> 
+//       </div>
+//     )
+//   }
+// }
+
+// export default Count2
