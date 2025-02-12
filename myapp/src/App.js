@@ -4,14 +4,17 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
+import Parent from "./components/class-com/Life-cycle-methods/Updating/Parent"
+
 // import Count1 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count1"
 // import Count2 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count2"
 // import Count3 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count3"
 // import Count1 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count1"
-import Count1 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Count1"
-import Count2 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Count2"
-import Count3 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Count3"
-import Render from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Render"
+// import Parent from "./components/class-com/Life-cycle-methods/Mounting/Parent"
+// import Count1 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Count1"
+// import Count2 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Count2"
+// import Count3 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Count3"
+// import Render from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Render-Props/Render"
 
 // import A from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Count1"
 // import B from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/Count2"
@@ -122,7 +125,7 @@ function App() {
     {/* <Count1 />
     <Count2 />
     <Count3/> */}
-    <Render test={(count, updateState) => {
+    {/* <Render test={(count, updateState) => {
      return <Count1 count={count} updateState={updateState} />
      } }>
     </Render>
@@ -133,7 +136,8 @@ function App() {
     <Render test={(count, updateState) => {
       return <Count3 count={count} updateState={updateState} />
      } }>
-    </Render>
+    </Render> */}
+    <Parent/>
     </div>)
 }
 
