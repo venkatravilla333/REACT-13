@@ -4,7 +4,16 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import Parent from "./components/class-com/Life-cycle-methods/Updating/Parent"
+import Parent from "./components/class-com/Life-cycle-methods/Error-boundry/Parent"
+
+// import Container from "./components/class-com/side-Effects/cleanup/Container"
+// import Parent from "./components/class-com/side-Effects/runs-onlyonce/Parent"
+
+// import Parent from "./components/class-com/side-Effects/runs-conditinally/Parent"
+
+// import Parent from "./components/class-com/side-Effects/default-behaviour/Parent"
+
+// import Parent from "./components/class-com/Life-cycle-methods/Updating/Parent"
 
 // import Count1 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count1"
 // import Count2 from "./components/class-com/performance/remove-duplicate-logic/remove-duplicate/HOC/Count2"
@@ -137,7 +146,12 @@ function App() {
       return <Count3 count={count} updateState={updateState} />
      } }>
     </Render> */}
+    {/* <Parent/> */}
+    {/* <Parent/> */}
+    {/* <Parent/> */}
+    {/* <Container/> */}
     <Parent/>
+    
     </div>)
 }
 

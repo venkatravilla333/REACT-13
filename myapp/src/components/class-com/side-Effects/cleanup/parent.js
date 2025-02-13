@@ -1,32 +1,41 @@
-import React, { useEffect, useState } from 'react'
+import React, { Component } from 'react'
 
-function Parent() {
- var [x, setX] = useState(0)
-  var [y, setY] = useState(0)
-
-  let updateState = (e) => {
-    console.log('update state')
-    setX(e.clientX)
-    setY(e.clientY)
+export class Parent extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+      x: 0,
+      y: 0
+    }
   }
 
-  console.log('render')
-  
-  useEffect(() => {
-    console.log('effect runs')
-    window.addEventListener('mousemove', updateState)
-    return () => {
-      window.removeEventListener('mousemove', updateState) //clean up task
-      console.log('clean up')
-    }
-  }, [])
+  updateState = (e) => {
+    console.log('state update')
+    this.setState({
+      x: e.clientX,
+      y: e.clientY
 
-  return (
-    <div>
-      <h2>X : {x}</h2>
-      <h2>Y : {y}</h2>
-    </div>
-  )
+    })
+  }
+  componentDidMount() {
+    console.log('did mount')
+    window.addEventListener('mousemove', this.updateState)
+  }
+
+  componentWillUnmount() {
+    console.log('cleanup')
+    window.removeEventListener('mousemove', this.updateState)
+  }
+  render() {
+    console.log('render')
+    return (
+      <div>
+        <h3>X: {this.state.x}</h3>
+        <h3>Y: {this.state.y}</h3>
+      </div>
+    )
+  }
 }
 
 export default Parent

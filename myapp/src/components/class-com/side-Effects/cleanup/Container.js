@@ -1,15 +1,22 @@
-import React, { useState } from 'react'
-import Parent from './parent'
+import React, { Component } from 'react'
+import Parent from './Parent'
 
-function Container() {
-
- var [display, setDisplay] = useState(true)
-  return (
-    <div>
-      {display && <Parent />}
-      <button onClick={()=>setDisplay(!display)}>toggle</button>
-    </div>
-  )
+export class Container extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+      display: true
+    }
+  }
+  render() {
+    return (
+      <div>
+        <button onClick={()=>this.setState({display: !this.state.display})}>Toggle</button>
+        {this.state.display && <Parent/>}
+      </div>
+    )
+  }
 }
 
 export default Container
