@@ -4,7 +4,15 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import Parent from "./components/class-com/Life-cycle-methods/Error-boundry/Parent"
+import Login from "./components/functional-com/CSS/Css-Modules/Login"
+import Signup from "./components/functional-com/CSS/Css-Modules/Signup"
+
+// import Parent from "./components/functional-com/CSS/Inline/Parent"
+// import Login from "./components/functional-com/CSS/Style-sheet/Login"
+// import Signup from "./components/functional-com/CSS/Style-sheet/Signup"
+
+// import Parent from "./components/class-com/Life-cycle-methods/Error-boundry/Parent"
+// import Getdata from "./components/class-com/side-Effects/api-call/Getdata"
 
 // import Container from "./components/class-com/side-Effects/cleanup/Container"
 // import Parent from "./components/class-com/side-Effects/runs-onlyonce/Parent"
@@ -150,8 +158,14 @@ function App() {
     {/* <Parent/> */}
     {/* <Parent/> */}
     {/* <Container/> */}
-    <Parent/>
-    
+    {/* <Parent/> */}
+    {/* <Getdata/> */}
+    {/* <Parent/> */}
+    {/* <Login />
+    <Signup/> */}
+
+    <Login />
+    <Signup />
     </div>)
 }
 
