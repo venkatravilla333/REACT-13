@@ -6,6 +6,8 @@
 
 import Login from "./components/functional-com/CSS/Css-Modules/Login"
 import Signup from "./components/functional-com/CSS/Css-Modules/Signup"
+import Parent from "./components/functional-com/Portals/Parent"
+import Value from "./components/functional-com/Refs/refer-value/Value"
 
 // import Parent from "./components/functional-com/CSS/Inline/Parent"
 // import Login from "./components/functional-com/CSS/Style-sheet/Login"
@@ -164,8 +166,10 @@ function App() {
     {/* <Login />
     <Signup/> */}
 
-    <Login />
-    <Signup />
+    {/* <Login />
+    <Signup /> */}
+    {/* <Parent/> */}
+    <Value/>
     </div>)
 }
 
