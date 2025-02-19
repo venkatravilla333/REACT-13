@@ -4,10 +4,17 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import Login from "./components/functional-com/CSS/Css-Modules/Login"
-import Signup from "./components/functional-com/CSS/Css-Modules/Signup"
-import Parent from "./components/functional-com/Portals/Parent"
-import Value from "./components/functional-com/Refs/refer-value/Value"
+import Timer from "./components/functional-com/Refs/refer-value/Timer"
+
+// import Timer from "./components/class-com/Refs/Timer"
+
+// import Dom from "./components/class-com/Refs/Dom"
+
+// import Login from "./components/functional-com/CSS/Css-Modules/Login"
+// import Signup from "./components/functional-com/CSS/Css-Modules/Signup"
+// import Parent from "./components/functional-com/Portals/Parent"
+// import Dom from "./components/functional-com/Refs/refer-dom-element/Dom"
+// import Value from "./components/functional-com/Refs/refer-value/Value"
 
 // import Parent from "./components/functional-com/CSS/Inline/Parent"
 // import Login from "./components/functional-com/CSS/Style-sheet/Login"
@@ -169,7 +176,10 @@ function App() {
     {/* <Login />
     <Signup /> */}
     {/* <Parent/> */}
-    <Value/>
+    {/* <Value/> */}
+    {/* <Dom/> */}
+    {/* <Timer/> */}
+    <Timer/>
     </div>)
 }
 
