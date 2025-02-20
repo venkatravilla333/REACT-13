@@ -5,6 +5,7 @@
 // import Jsx from './components/functional-com/JSX/Jsx'
 
 import Timer from "./components/functional-com/Refs/refer-value/Timer"
+import GetData from "./components/functional-com/State/async-data/localstate/useReducer/getData"
 
 // import Timer from "./components/class-com/Refs/Timer"
 
@@ -179,7 +180,8 @@ function App() {
     {/* <Value/> */}
     {/* <Dom/> */}
     {/* <Timer/> */}
-    <Timer/>
+    {/* <Timer/> */}
+    <GetData/>
     </div>)
 }
 
