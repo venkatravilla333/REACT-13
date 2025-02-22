@@ -6,6 +6,7 @@
 
 import Timer from "./components/functional-com/Refs/refer-value/Timer"
 import GetData from "./components/functional-com/State/async-data/localstate/useReducer/getData"
+import Parent from "./components/functional-com/VirtualDom/Parent"
 
 // import Timer from "./components/class-com/Refs/Timer"
 
@@ -181,7 +182,8 @@ function App() {
     {/* <Dom/> */}
     {/* <Timer/> */}
     {/* <Timer/> */}
-    <GetData/>
+    {/* <GetData/> */}
+    <Parent/>
     </div>)
 }
 
