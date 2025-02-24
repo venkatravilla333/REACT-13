@@ -4,9 +4,19 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import Timer from "./components/functional-com/Refs/refer-value/Timer"
-import GetData from "./components/functional-com/State/async-data/localstate/useReducer/getData"
-import Parent from "./components/functional-com/VirtualDom/Parent"
+import Parent from "./components/functional-com/performance/Virtual-Dom(rendering-process)/with-different-props/Parent"
+
+// import Parent from "./components/functional-com/performance/Virtual-Dom(rendering-process)/with-same-props/re-render/Parent"
+
+// import Parent from "./components/functional-com/performance/Virtual-Dom(rendering-process)/with-same-props/initial-render/Parent"
+
+// import Parent from "./components/functional-com/performance/Virtual-Dom(rendering-process)/without-props/Re-render/Parent"
+
+// import Parent from "./components/functional-com/performance/Virtual-Dom(rendering-process)/initial-Render/Parent"
+
+// import Timer from "./components/functional-com/Refs/refer-value/Timer"
+// import GetData from "./components/functional-com/State/async-data/localstate/useReducer/getData"
+// import Parent from "./components/functional-com/VirtualDom/Parent"
 
 // import Timer from "./components/class-com/Refs/Timer"
 
@@ -183,6 +193,11 @@ function App() {
     {/* <Timer/> */}
     {/* <Timer/> */}
     {/* <GetData/> */}
+    {/* <Parent/> */}
+    {/* <Parent/> */}
+    {/* <Parent/> */}
+    {/* <Parent/> */}
+    {/* <Parent/> */}
     <Parent/>
     </div>)
 }
