@@ -4,7 +4,9 @@
 // import Parent  from './components/class-com/Parent'
 // import Jsx from './components/functional-com/JSX/Jsx'
 
-import Parent from "./components/functional-com/performance/Virtual-Dom(rendering-process)/with-different-props/Parent"
+import Parent from "./components/class-com/performance/Virtual-dom/Parent"
+
+// import Parent from "./components/functional-com/performance/Virtual-Dom(rendering-process)/with-different-props/Parent"
 
 // import Parent from "./components/functional-com/performance/Virtual-Dom(rendering-process)/with-same-props/re-render/Parent"
 
@@ -193,6 +195,7 @@ function App() {
     {/* <Timer/> */}
     {/* <Timer/> */}
     {/* <GetData/> */}
+    {/* <Parent/> */}
     {/* <Parent/> */}
     {/* <Parent/> */}
     {/* <Parent/> */}
