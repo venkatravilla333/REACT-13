@@ -7,7 +7,7 @@ function Products() {
     <div className='products'>
       {
         products.map((product) => {
-          return <Link to={`/products/${product.id}`}>{product.name}</Link>
+          return <Link state={product} to={`/products/${product.id}`}>{product.name}</Link>
           
         })
       }

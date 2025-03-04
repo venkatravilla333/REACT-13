@@ -1,11 +1,19 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 
 function ProductDetails() {
   var {id} = useParams()
   console.log(id)
+
+  var url = useLocation()
+  console.log(url)
   return (
-    <div>ProductDetails : {id}</div>
+    <div>
+      <h3>Product details</h3>
+      <span>{url.state.id}: </span>
+      <span>{url.state.name}</span>
+     
+    </div>
   )
 }
 

@@ -1,7 +1,8 @@
 import React from 'react'
 import Home from './components/functional-com/Routing/Home'
-import About from './components/functional-com/Routing/About'
+// import About from './components/functional-com/Routing/About'
 import Products from './components/functional-com/Routing/Products'
+
 
 import '../src/components/functional-com/Routing/style.css'
 
@@ -11,6 +12,8 @@ import Header from './components/functional-com/Routing/Header'
 import Footer from './components/functional-com/Routing/Footer'
 import ProductDetails from './components/functional-com/Routing/ProductDetails'
 
+var LazyAbout = React.lazy(()=> import('./components/functional-com/Routing/About.js'))
+
 function App() {
   var url = useLocation()
   console.log(url)
@@ -19,8 +22,12 @@ function App() {
     <div>
      {url.pathname !=='/about' &&  <Header/> }
       <Routes>
-        <Route path='/' element={<Home/> } />
-        <Route path='/about' element={<About/> } />
+        <Route path='/home' element={<Home/> } />
+        <Route path='/about' element={
+          <React.Suspense fallback='Loading'>
+            <LazyAbout />
+          </React.Suspense>
+        } />
         <Route path='/products' element={<Products/> } >
           <Route path=':id' element={<ProductDetails />} />
         </Route>
