@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
   return (
@@ -8,13 +8,17 @@ function Header() {
       <header>
          <ul>
         <li>
-          <Link to="/">Home</Link>
+            <NavLink to="/" style={({ isActive }) => {
+              return isActive ? {color: 'blue'} : {color: 'yellow'}
+          }}>Home</NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <Link to="/products">Products</Link>
+          <NavLink to="/products" style={({ isActive }) => {
+              return isActive ? {color: 'blue'} : {color: 'yellow'}
+            }}> Products </NavLink>
         </li>
       </ul>
       </header>

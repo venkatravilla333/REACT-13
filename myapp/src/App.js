@@ -11,6 +11,8 @@ import PageNotFound from './components/functional-com/Routing/PageNotFound'
 import Header from './components/functional-com/Routing/Header'
 import Footer from './components/functional-com/Routing/Footer'
 import ProductDetails from './components/functional-com/Routing/ProductDetails'
+import Controlled from './components/functional-com/Controlled & Uncontrolled/Controlled.js'
+import Uncontrolled from './components/functional-com/Controlled & Uncontrolled/Uncontrolled.js'
 
 var LazyAbout = React.lazy(()=> import('./components/functional-com/Routing/About.js'))
 
@@ -20,10 +22,11 @@ function App() {
 
   return (
     <div>
-     {url.pathname !=='/about' &&  <Header/> }
+     {/* {url.pathname !=='/about' &&  <Header/> }
       <Routes>
-        <Route path='/home' element={<Home/> } />
-        <Route path='/about' element={
+        <Route path='/'>
+          <Route index element={<Home/> } />
+           <Route path='/about' element={
           <React.Suspense fallback='Loading'>
             <LazyAbout />
           </React.Suspense>
@@ -32,8 +35,12 @@ function App() {
           <Route path=':id' element={<ProductDetails />} />
         </Route>
         <Route path='*' element={<PageNotFound/> } />
+        </Route>
+        
       </Routes>
-      {/* <Footer/> */}
+      <Footer/> */}
+      <Controlled />
+      <Uncontrolled/>
     
     </div>
   )
